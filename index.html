@@ -1,29 +1,240 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hódos Gábor – PHP Backend Fejlesztő Önéletrajz</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600|Roboto:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>My Resume</h1>
-    </header>
-    <aside>
-        <h2>Contact</h2>
-        <ul>
-            <li>Email: example@example.com</li>
-            <li>Website: <a href="https://portfolio.hodos.me/">Portfolio</a></li>
-        </ul>
+  <main class="cv-container">
+    <aside class="cv-sidebar">
+      <img src="assets/images/avatar.jpg" alt="Hódos Gábor profilkép" class="cv-avatar" />
+      <h1>Hódos Gábor</h1>
+      <h2>PHP Backend Fejlesztő</h2>
+      <ul class="cv-contact">
+        <li><a href="mailto:hodosg@gmail.com">hodosg@gmail.com</a></li>
+        <li><a href="tel:+36302367118">+36-30-236-7118</a></li>
+        <li><a href="https://portfolio.hodos.me/" target="_blank" rel="noopener">portfolio.hodos.me</a></li>
+        <li><a href="https://www.linkedin.com/in/gabor-hodos" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/castorland" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+      <section class="cv-section">
+        <h3>Nyelvtudás</h3>
+        <div class="skill-badge">Angol – magabiztos szakmai szint</div>
+      </section>
+      <section class="cv-section">
+        <h3>Soft skillek</h3>
+        <div class="skill-badge">Problémamegoldás</div>
+        <div class="skill-badge">Agilis szemlélet</div>
+        <div class="skill-badge">Kommunikáció</div>
+        <div class="skill-badge">Önállóság</div>
+        <div class="skill-badge">Folyamatos tanulás</div>
+      </section>
+      <section class="cv-section">
+        <h3>Jövőkép</h3>
+        <p>
+          Hiszek az élethosszig tartó tanulásban és a technológiai fejlődés folyamatos követésében. Szeretem az új kihívásokat, önállóan és csapatban is eredményesen dolgozom.
+        </p>
+      </section>
     </aside>
-    <main>
-        <h2>Experience</h2>
-        <p>...</p>
-        <h2>Education</h2>
-        <p>...</p>
-    </main>
-    <footer>
-        <p>© 2023 My Resume.</p>
-    </footer>
+    <section class="cv-main">
+      <section class="cv-section cv-summary">
+        <h3>Szakmai összefoglaló</h3>
+        <p>
+          Tapasztalt PHP backend fejlesztő vagyok, aki elkötelezett a folyamatos fejlődés és a modern technológiák elsajátítása mellett. Senior szintű tapasztalattal rendelkezem Laravel, DevOps és CI/CD területen is – komplex egyedi rendszerektől kezdve portálokig, API-kig. Hiszek az élethosszig tartó tanulásban, a hatékony csapatmunkában és abban, hogy mindig lehet jobbá tenni a folyamatokat.
+        </p>
+      </section>
+      <section class="cv-section">
+        <h3>Kompetenciák & technológiák</h3>
+        <div class="skill-group">
+          <div class="skill-label">PHP (Laravel, Yii2, REST API)</div>
+          <div class="skill-bar"><span style="width: 95%"></span></div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-label">MySQL, PostgreSQL, Redis</div>
+          <div class="skill-bar"><span style="width: 90%"></span></div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-label">Docker, Git, CI/CD, Ubuntu</div>
+          <div class="skill-bar"><span style="width: 85%"></span></div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-label">Javascript (AlpineJS, React, NextJS)</div>
+          <div class="skill-bar"><span style="width: 75%"></span></div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-label">DevOps alapok, VPS, hosting, biztonság</div>
+          <div class="skill-bar"><span style="width: 80%"></span></div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-label">Rust, Python (alapok)</div>
+          <div class="skill-bar"><span style="width: 45%"></span></div>
+        </div>
+      </section>
+      <section class="cv-section">
+        <h3>Kiemelt projektek</h3>
+        <div class="project-card">
+          <div class="project-title">Drumkiller Dobcentrum Budapest</div>
+          <div class="project-tech">Tech: PHP (Yii1)</div>
+          <div class="project-role">Szerepkör: Full-stack fejlesztő</div>
+          <div class="project-desc">Egyedi rendszer diákok, órák és bérletek kezeléséhez egy dobiskola számára. Teljes tervezés és megvalósítás.</div>
+          <div class="project-link"><a href="https://drumkiller.hu/" target="_blank">Drumkiller Dobcentrum</a></div>
+        </div>
+        <div class="project-card">
+          <div class="project-title">Spala Kori Jóga Stúdió Budapest</div>
+          <div class="project-tech">Tech: PHP (Yii2)</div>
+          <div class="project-role">Szerepkör: Full-stack fejlesztő</div>
+          <div class="project-desc">Vendég-, óra- és bérletkezelő rendszer fejlesztése jóga stúdió számára, ütemezés és jogosultságkezelés.</div>
+          <div class="project-link"><a href="https://spalakori.hu/" target="_blank">Spala Kori Jóga</a></div>
+        </div>
+        <div class="project-card">
+          <div class="project-title">Eurizon Hungary – Website Backend & Admin</div>
+          <div class="project-tech">Tech: Laravel, Livewire, AlpineJS</div>
+          <div class="project-role">Szerepkör: Backend fejlesztő</div>
+          <div class="project-desc">A weboldal backendje és adminisztrációs felülete, banki szintű biztonsággal, tartalom verziókezeléssel és hozamkalkulációval.</div>
+          <div class="project-link"><a href="https://eurizon.hu/" target="_blank">Eurizon</a></div>
+        </div>
+        <div class="project-card">
+          <div class="project-title">SuperShop Hungary – Loyalty Program Admin & Mobile API</div>
+          <div class="project-tech">Tech: Laravel, Livewire</div>
+          <div class="project-role">Szerepkör: Backend fejlesztő</div>
+          <div class="project-desc">Admin eszközök és nagy forgalmú API szerver fejlesztése mobilalkalmazáshoz, valós idejű hűségpont-kezeléssel.</div>
+          <div class="project-link"><a href="https://supershop.hu/" target="_blank">SuperShop</a></div>
+        </div>
+        <div class="project-card">
+          <div class="project-title">Kreisz Tehetségteszt – Backend & Admin</div>
+          <div class="project-tech">Tech: CodeIgniter</div>
+          <div class="project-role">Szerepkör: Backend fejlesztő</div>
+          <div class="project-desc">Videóalapú tesztrendszer fejlesztése automatikus kiértékeléssel, PDF generálással, munkáltatói modulokkal és dashboardokkal. Teljes szerver infrastruktúra üzemeltetése.</div>
+          <div class="project-link"><a href="https://kreisztehetsegteszt.hu/" target="_blank">Kreisz Tehetségteszt</a></div>
+        </div>
+        <div class="project-card">
+          <div class="project-title">Magyar Gyermekmentő Alapítvány – Content Admin & Mobile App</div>
+          <div class="project-tech">Tech: Laravel, Flutter (hybrid app)</div>
+          <div class="project-role">Szerepkör: Backend & mobil fejlesztő</div>
+          <div class="project-desc">Tartalomkezelő admin fejlesztése és hibrid mobilalkalmazás publikálása.</div>
+          <div class="project-link"><a href="https://apps.apple.com/hu/app/gyermekels%C5%91seg%C3%A9ly/id1551773306" target="_blank">Gyermekelsősegély iOS</a> | <a href="https://play.google.com/store/apps/details?id=hu.gyalap.gyalapapp&pli=1" target="_blank">Gyermekelsősegély Android</a></div>
+        </div>
+        <div class="project-card">
+          <div class="project-title">Skanzen Szentendre – Content Admin</div>
+          <div class="project-tech">Tech: Laravel, Livewire</div>
+          <div class="project-role">Szerepkör: Backend fejlesztő</div>
+          <div class="project-desc">Tartalomkezelő admin felület fejlesztése a múzeum számára.</div>
+          <div class="project-link"><a href="https://skanzen.hu/" target="_blank">Skanzen Szentendre</a></div>
+        </div>
+        <div class="project-card">
+          <div class="project-title">Akkubox.hu – Webshop Backend</div>
+          <div class="project-tech">Tech: Laravel</div>
+          <div class="project-role">Szerepkör: Backend fejlesztő</div>
+          <div class="project-desc">Webshop backend logika kialakítása, ERP integráció termék-, ügyfél- és rendelés szinkronnal.</div>
+          <div class="project-link"><a href="https://akkubox.hu/" target="_blank">Akkubox</a></div>
+        </div>
+        <div class="project-card">
+          <div class="project-title">Decathlon Hungary – Click&Go Middleware API</div>
+          <div class="project-tech">Tech: Laravel</div>
+          <div class="project-role">Szerepkör: Backend fejlesztő</div>
+          <div class="project-desc">Middleware API fejlesztése rendelésmenedzsmenthez, Decathlon rendszer és Cleveron csomagautomata integrációval.</div>
+        </div>
+        <div class="project-card">
+          <div class="project-title">Kidline – Medical Triage Backend & Mobile App</div>
+          <div class="project-tech">Tech: Laravel, Livewire, Flutter</div>
+          <div class="project-role">Szerepkör: Backend & mobil fejlesztő</div>
+          <div class="project-desc">Triage folyamatokat támogató backend és hibrid mobilalkalmazás fejlesztése. (A projekt publikálás előtt leállt.)</div>
+        </div>
+        <div class="project-card">
+          <div class="project-title">Continental Engineering – Cable Selector & Order Backend</div>
+          <div class="project-tech">Tech: Laravel</div>
+          <div class="project-role">Szerepkör: Backend fejlesztő</div>
+          <div class="project-desc">Kábelválasztó és rendeléskezelő backend fejlesztése.</div>
+          <div class="project-link"><a href="https://conti-engineering.hu/konfigurator" target="_blank">Conti Engineering Configurator</a></div>
+        </div>
+        <div class="project-card">
+          <div class="project-title">Greenwiperz Switzerland – Carwash Admin System</div>
+          <div class="project-tech">Tech: Laravel, Livewire</div>
+          <div class="project-role">Szerepkör: Backend fejlesztő</div>
+          <div class="project-desc">Admin rendszer fejlesztése autómosó ügyfelek, rendelések, foglalások és online fizetések kezeléséhez.</div>
+          <div class="project-link"><a href="https://greenwiperz.ch/" target="_blank">Greenwiperz</a></div>
+        </div>
+        <div class="project-card">
+          <div class="project-title">NewKitchen4You – Recipe Admin & API</div>
+          <div class="project-tech">Tech: Laravel, Filament</div>
+          <div class="project-role">Szerepkör: Backend fejlesztő (folyamatban)</div>
+          <div class="project-desc">Admin/REST API fejlesztése és karbantartása egy receptmegosztó platformhoz.</div>
+          <div class="project-link"><a href="https://newkitchen4you.hu/" target="_blank">NewKitchen4You</a></div>
+        </div>
+        <div class="project-card">
+          <div class="project-title">Enterprise Management System</div>
+          <div class="project-tech">Tech: PHP (legacy), MySQL, JavaScript</div>
+          <div class="project-role">Szerepkör: Full-stack fejlesztő</div>
+          <div class="project-desc">Teljeskörű ERP rendszer fejlesztése készlet-, értékesítés-, beszerzés- és riport modulokkal. (Privát projekt, nincs publikusan elérhető link.)</div>
+        </div>
+      </section>
+      <section class="cv-section">
+        <h3>Szakmai tapasztalat</h3>
+        <div class="cv-job">
+          <div class="cv-job-header">
+            <strong>Szabadúszó PHP fejlesztő</strong>
+            <span>2024 szept – jelen</span>
+          </div>
+          <ul>
+            <li>Laravel-alapú receptes oldal fejlesztése</li>
+            <li>Rust, NextJS, modern stack kipróbálása</li>
+            <li>Frontend és DevOps feladatokban is részvétel</li>
+          </ul>
+        </div>
+        <div class="cv-job">
+          <div class="cv-job-header">
+            <strong>Senior PHP fejlesztő – Protecta Kft.</strong>
+            <span>2024 jún – szept</span>
+          </div>
+          <ul>
+            <li>Egyedi vállalati rendszerek fejlesztése 3 fős csapatban</li>
+            <li>Folyamatok automatizálása, backend logika kialakítása</li>
+          </ul>
+        </div>
+        <div class="cv-job">
+          <div class="cv-job-header">
+            <strong>PHP webfejlesztő, DevOps – SKVAD Digital Kft.</strong>
+            <span>2020 – 2024</span>
+          </div>
+          <ul>
+            <li>Laravel + Livewire fullstack fejlesztés</li>
+            <li>Egyedi deploy folyamatok, dockerizált környezetek kialakítása</li>
+            <li>Projektek: mome.hu, Eurizon.hu, SuperShop.hu, Akkubox.hu, RestAPI-k</li>
+          </ul>
+        </div>
+        <div class="cv-job">
+          <div class="cv-job-header">
+            <strong>Webfejlesztő, cégvezető – Castor Land Bt</strong>
+            <span>2017 – 2020</span>
+          </div>
+          <ul>
+            <li>Yii1/Yii2, React alapú rendszerek, mobilapp backend</li>
+            <li>Projektvezetés, csapatmunka</li>
+            <li>Projektek: Drumkiller, KreiszTehetsegTeszt, SpalaKoriJoga</li>
+          </ul>
+        </div>
+        <div class="cv-job">
+          <div class="cv-job-header">
+            <strong>Mérnök, projektvezető – Specialbau Kft.</strong>
+            <span>2000 – 2017</span>
+          </div>
+          <ul>
+            <li>Üvegipari projektek vezetése, műszaki ügyintézés</li>
+          </ul>
+        </div>
+      </section>
+      <section class="cv-section">
+        <h3>Tanulmányok & önfejlesztés</h3>
+        <ul>
+          <li>Autodidakta programozói tanulás (w3schools, Udemy, YouTube, stb.)</li>
+          <li>Aktív Git, Docker, DevOps ismeretek folyamatos bővítése</li>
+          <li>Laravel, Livewire, AlpineJS, Rust, CI/CD</li>
+        </ul>
+      </section>
+    </section>
+  </main>
 </body>
 </html>
