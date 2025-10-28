@@ -1,0 +1,199 @@
+body {
+  font-family: 'Montserrat', 'Roboto', Arial, sans-serif;
+  background: #f6f7fb;
+  margin: 0;
+  color: #222;
+}
+.cv-container {
+  display: flex;
+  max-width: 1100px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+.cv-sidebar {
+  background: #22396c;
+  color: #fff;
+  width: 320px;
+  min-width: 260px;
+  padding: 40px 30px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cv-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 22px;
+  border: 4px solid #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.09);
+}
+.cv-sidebar h1 {
+  font-size: 1.6em;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  letter-spacing: 0.5px;
+}
+.cv-sidebar h2 {
+  font-size: 1.1em;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  color: #aaccff;
+  letter-spacing: 0.5px;
+}
+.cv-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px 0;
+  font-size: 0.98em;
+  width: 100%;
+}
+.cv-contact li {
+  margin-bottom: 8px;
+  word-break: break-all;
+}
+.cv-contact a {
+  color: #c2e6ff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.cv-contact a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.cv-section {
+  margin-bottom: 26px;
+  width: 100%;
+}
+.cv-section h3 {
+  font-size: 1.07em;
+  font-weight: 600;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+  color: #22396c;
+}
+.skill-badge {
+  display: inline-block;
+  background: #e6f2ff;
+  color: #22396c;
+  padding: 4px 12px;
+  margin: 4px 6px 4px 0;
+  border-radius: 14px;
+  font-size: 0.97em;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+.cv-main {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 40px 48px 38px 48px;
+}
+.cv-summary p {
+  font-size: 1.13em;
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: #24417a;
+}
+.skill-group {
+  margin-bottom: 14px;
+}
+.skill-label {
+  font-size: 1em;
+  font-weight: 500;
+  color: #22396c;
+  margin-bottom: 2px;
+}
+.skill-bar {
+  background: #e7e7f3;
+  border-radius: 7px;
+  height: 8px;
+  width: 100%;
+  margin: 0 0 3px 0;
+  position: relative;
+  overflow: hidden;
+}
+.skill-bar span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #2877ee 60%, #45c6ff 100%);
+  border-radius: 7px;
+  transition: width 0.7s;
+}
+.cv-job {
+  margin-bottom: 18px;
+}
+.cv-job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-weight: 600;
+  color: #2350a2;
+  margin-bottom: 6px;
+  font-size: 1.02em;
+}
+.cv-job ul {
+  margin: 0 0 0 16px;
+  padding: 0;
+  font-size: 1em;
+}
+.cv-job ul li {
+  margin-bottom: 4px;
+}
+
+.project-card {
+  background: #f6f7fb;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  padding: 12px 16px;
+  box-shadow: 0 2px 8px rgba(34,57,108,0.07);
+}
+.project-title {
+  font-weight: 600;
+  color: #22396c;
+  font-size: 1.08em;
+  margin-bottom: 2px;
+}
+.project-tech {
+  font-size: 0.93em;
+  color: #2877ee;
+  margin-bottom: 2px;
+}
+.project-role {
+  font-size: 0.93em;
+  color: #444e8f;
+  margin-bottom: 2px;
+}
+.project-desc {
+  margin: 4px 0 4px 0;
+  font-size: 0.98em;
+}
+.project-link a {
+  color: #285ac8;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 0.98em;
+}
+.project-link a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  .cv-container {
+    flex-direction: column;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .cv-sidebar {
+    width: 100%;
+    min-width: 0;
+    border-radius: 0 0 20px 20px;
+    padding: 30px 15px 20px 15px;
+  }
+  .cv-main {
+    padding: 28px 12px 24px 12px;
+  }
+}
