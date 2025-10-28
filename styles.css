@@ -4,10 +4,34 @@ body {
   margin: 0;
   color: #222;
 }
+.lang-switcher {
+  text-align: right;
+  padding: 18px 38px 6px 0;
+  max-width: 1100px;
+  margin: 0 auto -16px auto;
+}
+.lang-btn {
+  background: #22396c;
+  color: #fff;
+  border: none;
+  padding: 7px 19px;
+  border-radius: 12px;
+  font-size: 1em;
+  font-weight: 600;
+  margin: 0 2px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  letter-spacing: 0.5px;
+}
+.lang-btn:disabled, .lang-btn[aria-pressed="true"] {
+  background: #e6f2ff;
+  color: #22396c;
+  cursor: default;
+}
 .cv-container {
   display: flex;
   max-width: 1100px;
-  margin: 40px auto;
+  margin: 0 auto 40px auto;
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 4px 32px rgba(0,0,0,0.08);
@@ -143,7 +167,6 @@ body {
 .cv-job ul li {
   margin-bottom: 4px;
 }
-
 .project-card {
   background: #f6f7fb;
   border-radius: 8px;
@@ -171,7 +194,7 @@ body {
   margin: 4px 0 4px 0;
   font-size: 0.98em;
 }
-.project-link a {
+.project-link a, .project-link span {
   color: #285ac8;
   font-weight: 500;
   text-decoration: none;
@@ -195,5 +218,8 @@ body {
   }
   .cv-main {
     padding: 28px 12px 24px 12px;
+  }
+  .lang-switcher {
+    padding: 14px 10px 2px 0;
   }
 }
