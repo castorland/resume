@@ -250,8 +250,8 @@
   </main>
   <script>
     function setLang(lang) {
-      document.getElementById('cv-en').style.display = lang === 'en' ? 'block' : 'none';
-      document.getElementById('cv-hu').style.display = lang === 'hu' ? 'block' : 'none';
+      document.getElementById('cv-en').style.display = lang === 'en' ? 'flex' : 'none';
+      document.getElementById('cv-hu').style.display = lang === 'hu' ? 'flex' : 'none';
       document.getElementById('en-btn').disabled = (lang === 'en');
       document.getElementById('hu-btn').disabled = (lang === 'hu');
     }
